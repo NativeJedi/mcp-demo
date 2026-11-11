@@ -31,6 +31,7 @@ export function registerResources(server: McpServer, store: DocumentStore): void
           uri: documentUri(id),
           name: id,
           mimeType: "text/plain",
+          title: id,
         })),
       }),
       complete: { doc_id: docIdCompleter(store) },
