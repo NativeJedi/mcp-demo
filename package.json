@@ -1,0 +1,19 @@
+{
+  "name": "docs-mcp",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "dev:server": "npm run dev -w @docs-mcp/server",
+    "inspect": "npm run build && npx @modelcontextprotocol/inspector node packages/server/dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.0",
+    "vitest": "^5.1.0"
+  }
+}
