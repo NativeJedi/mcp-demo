@@ -6,8 +6,9 @@
   "workspaces": ["packages/*"],
   "scripts": {
     "build": "tsc -b",
-    "test": "vitest run",
+    "test": "npm run build && vitest run",
     "dev:server": "npm run dev -w @docs-mcp/server",
+    "dev:client": "node --env-file=.env --import tsx packages/client/src/index.ts",
     "inspect": "npm run build && npx @modelcontextprotocol/inspector node packages/server/dist/index.js"
   },
   "devDependencies": {

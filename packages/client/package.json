@@ -1,0 +1,16 @@
+{
+  "name": "@docs-mcp/client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.8.0",
+    "@docs-mcp/shared": "*",
+    "@modelcontextprotocol/client": "^2.4.0",
+    "openai": "^7.55.0"
+  }
+}
